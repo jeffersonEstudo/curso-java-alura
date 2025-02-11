@@ -2,23 +2,22 @@ import java.util.Scanner;
 
 public class OutroLoop {
     public static void main(String[] args){
-
+        Scanner leitura = new Scanner(System.in);
         int mediaAvaliacao = 0;
         double nota = 0;
-        int repeticoe = (int)nota;
+        int totalDeNotas = 0;
 
-        while (repeticoe != -1){
-            System.out.println("Digite a sua avaliação: ");
-            Scanner notaDitada = new Scanner(System.in);
-            nota = notaDitada.nextDouble();
+        while (nota != -1){
+            System.out.println("Digite a sua avaliação ou -1 para encerrar: ");
+             nota = leitura.nextDouble();
 
-
-            mediaAvaliacao += nota;
-            repeticoe += nota  ;
-            repeticoe ++;
+             if(nota != -1) {
+                 mediaAvaliacao += nota;
+                 totalDeNotas++;
+             }
         }
 
-        System.out.println("Média final: " + mediaAvaliacao / repeticoe);
+        System.out.println("Média final: " + mediaAvaliacao / totalDeNotas);
 
     }
 }
