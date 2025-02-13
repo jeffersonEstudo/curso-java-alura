@@ -3,7 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GameAdivinha {
-    public static void main(System[] args){
+    public static void main(String[] args){
 
         Scanner leitura = new Scanner(System.in);
         System.out.println("GAME DE ADIVINHAÇÂO");
@@ -18,8 +18,10 @@ public class GameAdivinha {
             new Random(numeroAleatorio).nextInt(100);
             if(numero != numeroAleatorio){
                 System.out.println("Você errou. O número correto é: " + numeroAleatorio);
+                break;
             }else {
                 System.out.println("Você ACERTOU!" + numero);
+                break;
             }
 
         }
