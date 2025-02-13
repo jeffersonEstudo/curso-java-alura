@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ComparandoOsCaracteres {
     public static void main (String[] args){
-
+        //Atividade Prática 2 modulo 3 penúltima aula
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Digite dois números: ");
