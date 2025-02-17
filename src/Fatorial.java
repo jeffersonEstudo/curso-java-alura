@@ -12,15 +12,15 @@ public class Fatorial {
 
         int numero = leitura.nextInt();
         int i = 2;
-        int total;
-       while(i < numero){
+        int total = 0;
+        while(i < numero){
 
-          total = numero * (numero - 1) ;
+            total = numero * (numero - 1) ;
 
-         numero--;
-         System.out.println(total);
+            numero--;
+            System.out.println(total);
 
-       }
-
+        }
+        System.out.println("O fatorial de " + (numero + 1) + " é " + total);
     }
 }
