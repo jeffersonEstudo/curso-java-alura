@@ -8,13 +8,14 @@ public class Fatorial {
                 Digite um número:
                 """);
         int numero = leitura.nextInt();
-        int i;
-        for( i = 0; i < numero ; i++){
-          int total = numero * i;
-         i++;
-            System.out.println(total);
+        int i = 1;
+        int total;
+       while(i < numero){
+          total = numero * (numero - 1) ;
 
-        }
+         numero--;
+           System.out.println(total);
+       }
 
     }
 }
