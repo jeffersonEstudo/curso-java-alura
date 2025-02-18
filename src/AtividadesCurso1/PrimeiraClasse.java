@@ -1,3 +1,5 @@
+package AtividadesCurso1;
+
 public class PrimeiraClasse {
     public static void main(String[] args){
 

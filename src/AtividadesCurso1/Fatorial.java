@@ -1,5 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
+package AtividadesCurso1;
+
 import java.util.Scanner;
 
 public class Fatorial {

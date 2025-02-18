@@ -10,7 +10,7 @@ public class Aplication {
 
       objetoDaClasseFilme.avaliacao(8);
       objetoDaClasseFilme.avaliacao(5);
-      objetoDaClasseFilme.avaliacao(9);
+      objetoDaClasseFilme.avaliacao(10);
 
       objetoDaClasseFilme.descricao();
     }

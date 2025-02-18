@@ -1,3 +1,5 @@
+package AtividadesCurso1;
+
 import java.util.Scanner;
 
 public class Tabuada {

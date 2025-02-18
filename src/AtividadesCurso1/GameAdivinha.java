@@ -1,5 +1,5 @@
-import javax.swing.plaf.synth.SynthTextAreaUI;
-import java.sql.SQLOutput;
+package AtividadesCurso1;
+
 import java.util.Random;
 import java.util.Scanner;
 
