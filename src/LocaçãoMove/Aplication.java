@@ -2,13 +2,16 @@ package LocaçãoMove;
 
 public class Aplication {
     public static void main(String[] args){
-      Filme mostraFilme = new Filme();
-      mostraFilme.name = "O poderoso chefão";
-      mostraFilme.ano = 1979;
-      mostraFilme.duracao = 180;
+      Filme objetoDaClasseFilme = new Filme();
+      objetoDaClasseFilme.name = "O poderoso chefão";
+      objetoDaClasseFilme.ano = 1979;
+      objetoDaClasseFilme.duracao = 180;
 
 
-      mostraFilme.avaliacao();
-      mostraFilme.descricao();
+      objetoDaClasseFilme.avaliacao(8);
+      objetoDaClasseFilme.avaliacao(5);
+      objetoDaClasseFilme.avaliacao(9);
+
+      objetoDaClasseFilme.descricao();
     }
 }
