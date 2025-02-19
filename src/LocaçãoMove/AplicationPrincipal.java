@@ -5,9 +5,9 @@ import br.com.alura.screenmath.modelosLocacaoMove.Filme;
 public class AplicationPrincipal {
     public static void main(String[] args){
       Filme objetoDaClasseFilme = new Filme();
-      objetoDaClasseFilme.name = "O poderoso chefão";
-      objetoDaClasseFilme.ano = 1979;
-      objetoDaClasseFilme.duracao = 180;
+      objetoDaClasseFilme.setName("O poderoso chefão"); ;
+      objetoDaClasseFilme.setAnoDeLacamento(1979);
+      objetoDaClasseFilme.setDuracaoEmMinutos(180);
 
 
       objetoDaClasseFilme.avaliacao(8);
