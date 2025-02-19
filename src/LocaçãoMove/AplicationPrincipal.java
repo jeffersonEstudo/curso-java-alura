@@ -1,6 +1,6 @@
 package LocaçãoMove;
 
-import br.com.alura.screenmath.modelos.Filme;
+import br.com.alura.screenmath.modelosLocacaoMove.Filme;
 
 public class AplicationPrincipal {
     public static void main(String[] args){
