@@ -1,19 +1,20 @@
-package LocaçãoMove;
+package br.com.alura.screenmath.modelos;
 
 
 
 public class Filme {
-    String name;
-    int ano;
+
+    public String name;
+    public int ano;
     private int totalNota;
-    double duracao;
+    public double duracao;
     private double somaNota;
 
-    int getTotalNota(){
+   public int getTotalNota(){
       return totalNota;
     }
 
-    void descricao(){
+    public void descricao(){
         System.out.println("Nome do Filme: " + name);
         System.out.println("Ano de lançamento: " + ano);
         System.out.println("Duração: " + duracao);
@@ -21,12 +22,12 @@ public class Filme {
 
     }
 
-    void avaliacao( double nota){
+    public void avaliacao( double nota){
        somaNota += nota;
        totalNota++;
     }
 
-    double mediaNota(){
+    public double mediaNota(){
         return somaNota / totalNota;
 
     }

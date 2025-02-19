@@ -1,6 +1,8 @@
 package LocaçãoMove;
 
-public class Aplication {
+import br.com.alura.screenmath.modelos.Filme;
+
+public class AplicationPrincipal {
     public static void main(String[] args){
       Filme objetoDaClasseFilme = new Filme();
       objetoDaClasseFilme.name = "O poderoso chefão";
