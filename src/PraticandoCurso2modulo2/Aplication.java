@@ -5,10 +5,15 @@ public class Aplication {
 
       ContaBancaria objetoContaBancaria = new ContaBancaria();
 
-        int senha = 123;
+      objetoContaBancaria.setTitular("Raimunda");
+      objetoContaBancaria.getTitular();
+
+
+      int senha = 123;
       if ( senha == 123) {
           objetoContaBancaria.setLogou(true);
-          objetoContaBancaria.setNumeroConta(2003);
+          objetoContaBancaria.setNumeroConta(10000);
+          objetoContaBancaria.setSaldo(50000);
           objetoContaBancaria.getNumeroConta();
 
       }else {
