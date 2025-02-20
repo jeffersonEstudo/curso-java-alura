@@ -1,8 +1,8 @@
 package br.com.alura.screenmath.modelosLocacaoMove;
 
-public class Serie {
+public class Serie extends Titulo{
 private  int temporadas;
-private int episodiosPorProgramas;
+private int episodiosPorTemporada;
 private int minutosPorEpisodio;
 private boolean ativa;
 
@@ -15,12 +15,12 @@ private boolean ativa;
         this.temporadas = temporadas;
     }
 
-    public int getEpisodiosPorProgramas() {
-        return episodiosPorProgramas;
+    public int getEpisodiosPorTemporada() {
+        return episodiosPorTemporada;
     }
 
-    public void setEpisodiosPorProgramas(int episodiosPorProgramas) {
-        this.episodiosPorProgramas = episodiosPorProgramas;
+    public void setEpisodiosPorTemporada(int episodiosPorTemporada) {
+        this.episodiosPorTemporada = episodiosPorTemporada;
     }
 
     public int getMinutosPorEpisodio() {
@@ -38,4 +38,11 @@ private boolean ativa;
     public void setAtiva(boolean ativa) {
         this.ativa = ativa;
     }
+
+    @Override
+    public double getDuracaoEmMinutos() {
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;
+    }
+
+
 }

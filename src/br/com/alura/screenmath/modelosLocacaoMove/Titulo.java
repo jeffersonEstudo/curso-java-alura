@@ -38,7 +38,7 @@ public class Titulo {
         return duracaoEmMinutos;
     }
 
-    public void descricao(){
+    public void exibeFichaTecnica(){
         System.out.println("Nome do Filme: " + name);
         System.out.println("Ano de lançamento: " + anoDeLacamento);
         System.out.println("Duração: " + duracaoEmMinutos);
