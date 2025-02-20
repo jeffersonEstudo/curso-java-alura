@@ -5,10 +5,15 @@ public class AplicationLivro {
 
         Livro objetoLivro = new Livro();
 
-        objetoLivro.setAutor("Tommy");
         objetoLivro.setTitulo("Lipica");
+        objetoLivro.setAutor("Tommy");
         objetoLivro.exibirDetalhes();
 
+        Livro objetoLivro2 = new Livro();
+
+        objetoLivro2.setTitulo("Zeca");
+        objetoLivro2.setAutor("Pagordin");
+        objetoLivro2.exibirDetalhes();
 
     }
 }
