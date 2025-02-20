@@ -1,6 +1,6 @@
 package PraticandoCurso2modulo2;
 
-public class Aplication {
+public class AplicationCB {
     public static void main(String[] args){
 
       ContaBancaria objetoContaBancaria = new ContaBancaria();
