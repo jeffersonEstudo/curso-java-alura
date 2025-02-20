@@ -1,4 +1,4 @@
-package PraticandoCurso2modulo2;
+package br.com.alura.PraticandoCurso2modulo2;
 
 public class Livro {
     private String titulo;

@@ -1,5 +1,7 @@
 package PraticandoCurso2modulo2;
 
+import br.com.alura.PraticandoCurso2modulo2.Aluno;
+
 public class AplicationAluno {
     public static void main(String[] args){
 
