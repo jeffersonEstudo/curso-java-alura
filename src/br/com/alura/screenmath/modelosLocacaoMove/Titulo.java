@@ -9,6 +9,9 @@ public class Titulo {
     private double somaNota;
     private boolean incluidoNoPlano;
 
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -42,7 +45,7 @@ public class Titulo {
         System.out.println("Nome do Filme: " + name);
         System.out.println("Ano de lançamento: " + anoDeLacamento);
         System.out.println("Duração: " + duracaoEmMinutos);
-        System.out.println("Media nota: %.2f" + mediaNota() + " Notas totais: " + totalNota );
+        System.out.println("Media nota: " + mediaNota() + " Notas totais: " + totalNota );
 
     }
 

@@ -41,8 +41,16 @@ private boolean ativa;
 
     @Override
     public double getDuracaoEmMinutos() {
+
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
 
+    @Override
+    public void exibeFichaTecnica() {
+        System.out.println("Nome da série: " + this.getName());
+        System.out.println("Ano de lançamento: " + this.getAnoDeLacamento());
+        System.out.println("Temporadas: " + getTemporadas());
+        System.out.println("Minutos por episódio: " + getMinutosPorEpisodio());
 
+    }
 }
