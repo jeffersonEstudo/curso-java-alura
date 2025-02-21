@@ -2,7 +2,7 @@ package PraticandoCurso2Modulo3Polimorfismo;
 
 import br.com.alura.PraticandoCurso2modulo3Polimorfismo.Carro;
 
-public class AplicationPrincipal {
+public class AplicationPrincipalCarro {
     public static void main(String[] args) {
 
         Carro objetoCarro = new Carro();
