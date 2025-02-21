@@ -8,6 +8,9 @@ public class AplicationPrincipal {
         Carro objetoCarro = new Carro();
         objetoCarro.setPreco(10000);
         objetoCarro.precoMedioAno(2020);
+        objetoCarro.setNome("Fashiback");
+        objetoCarro.setModelo("Impetos T200");
+        objetoCarro.mostra();
 
 
     }
