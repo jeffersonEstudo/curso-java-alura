@@ -48,5 +48,6 @@ public class AplicationPrincipal {
         objetoCalculadora.inclui(objetoDaClasseFilme);
         objetoCalculadora.inclui(objetoSerieLost);
         System.out.println(objetoCalculadora.getTempoTotal());
+
     }
 }
