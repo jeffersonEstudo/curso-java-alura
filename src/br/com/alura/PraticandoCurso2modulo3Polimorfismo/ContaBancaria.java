@@ -4,6 +4,15 @@ public class ContaBancaria {
     protected double consultarSaldo;
     protected double depositar;
     protected double sacar;
+    protected double saldo;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 
     public double getConsultarSaldo() {
         return consultarSaldo;
@@ -23,5 +32,10 @@ public class ContaBancaria {
 
     public void setSacar(double sacar) {
         this.sacar = sacar;
+    }
+
+    public void deposita(){
+         saldo += this.depositar;
+        System.out.println("Foi depositado: " + depositar + " seu saldo atual é: " + saldo);
     }
 }
