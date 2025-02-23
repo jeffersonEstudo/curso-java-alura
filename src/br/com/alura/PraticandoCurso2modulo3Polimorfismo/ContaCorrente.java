@@ -6,7 +6,7 @@ public class ContaCorrente {
     protected boolean cobrancaAtiva;
     protected double saldoAtualizado;
     protected int mesesTotais;
-
+  protected  double total;
 
     public int getMesesTotais() {
         return mesesTotais;
@@ -31,14 +31,19 @@ public class ContaCorrente {
     public void setDescontaContaCorrente(double descontaContaCorrente) {
         this.descontaContaCorrente = descontaContaCorrente;
     }
-//Baseando na "calculadora de Tempo" metodo "inclui"
+
     public void desconta(ContaBancaria c){
         if (cobrancaAtiva == false){
             System.out.println("Foi descontado: " + descontaContaCorrente + " do seu saldo. Saldo atual: " + (c.getSaldo() - descontaContaCorrente));
         }else {
-            for (int i = 0; i < mesesTotais; i++) {
-                System.out.println("Foi descontado: " + descontaContaCorrente + " do seu saldo. Saldo atual: " + (c.getSaldo() - descontaContaCorrente));
-                descontaContaCorrente += descontaContaCorrente;
+            for (int i = 1; i < mesesTotais; i++) {
+
+
+                System.out.println("Foi descontado: " + descontaContaCorrente +
+                        " do seu saldo. Saldo atual: " +
+                        (c.getSaldo() - descontaContaCorrente));
+
+
             }
         }
         this.saldoAtualizado = (c.getSaldo() - descontaContaCorrente);

@@ -14,14 +14,15 @@ public class AplicationPrincipalContaBancaria {
         objetoContaBancaria.setSaldo(5000);
         objetoContaBancaria.deposita();
 
-
+        System.out.println();
 
         ContaCorrente objetoContaCorrente = new ContaCorrente();
 
-        objetoContaCorrente.setCobrancaAtiva(true);
+        objetoContaCorrente.setCobrancaAtiva(false);
         objetoContaCorrente.setDescontaContaCorrente(1000);
-        objetoContaCorrente.setMesesTotais(3);
+        objetoContaCorrente.setMesesTotais(4);
         objetoContaCorrente.desconta(objetoContaBancaria);
         objetoContaBancaria.descontaCorrente(objetoContaCorrente);
+
     }
 }
