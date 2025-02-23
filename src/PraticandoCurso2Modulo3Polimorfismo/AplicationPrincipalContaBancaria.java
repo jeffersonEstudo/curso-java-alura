@@ -18,9 +18,9 @@ public class AplicationPrincipalContaBancaria {
 
         ContaCorrente objetoContaCorrente = new ContaCorrente();
 
-        objetoContaCorrente.setValorDeMesesACobrar(false);
+        objetoContaCorrente.setCobrancaAtiva(false);
         objetoContaCorrente.setDescontaContaCorrente(1000);
         objetoContaCorrente.desconta(objetoContaBancaria);
-
+        objetoContaBancaria.descontaCorrente(objetoContaCorrente);
     }
 }

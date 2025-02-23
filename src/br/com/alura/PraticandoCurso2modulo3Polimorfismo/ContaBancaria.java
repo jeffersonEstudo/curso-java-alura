@@ -38,4 +38,11 @@ public class ContaBancaria {
          saldo += this.depositar;
         System.out.println("Foi depositado: " + depositar + " seu saldo atual é: " + saldo);
     }
+
+    public void descontaCorrente(ContaCorrente D){
+
+        this.saldo = (saldo = D.saldoAtualizado);
+        System.out.println("Saldo atualizado: " + saldo);
+
+    }
 }
