@@ -1,7 +1,7 @@
 package LocaçãoMove;
 
-import br.com.alura.screenmath.modelosLocacaoMove.Filme;
-import br.com.alura.screenmath.modelosLocacaoMove.Serie;
+import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Filme;
+import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Serie;
 import br.com.alura.screenmath.modelosLocacaoMove.calculos.CalculadoraDeTempo;
 
 public class AplicationPrincipal {

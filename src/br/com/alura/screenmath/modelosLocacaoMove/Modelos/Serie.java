@@ -1,4 +1,4 @@
-package br.com.alura.screenmath.modelosLocacaoMove;
+package br.com.alura.screenmath.modelosLocacaoMove.Modelos;
 
 public class Serie extends Titulo{
 private  int temporadas;
