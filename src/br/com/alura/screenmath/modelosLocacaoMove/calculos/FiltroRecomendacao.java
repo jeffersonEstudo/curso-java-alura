@@ -1,7 +1,7 @@
 package br.com.alura.screenmath.modelosLocacaoMove.calculos;
 
 public class FiltroRecomendacao {
-    protected String recomendacao;
+
 
     public void filtra(Classificavel classificavel){
         if (classificavel.getclassificacao() >= 4){
