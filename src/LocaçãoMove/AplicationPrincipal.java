@@ -1,8 +1,10 @@
 package LocaçãoMove;
 
+import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Episodio;
 import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Filme;
 import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Serie;
 import br.com.alura.screenmath.modelosLocacaoMove.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmath.modelosLocacaoMove.calculos.FiltroRecomendacao;
 
 public class AplicationPrincipal {
     public static void main(String[] args){
@@ -48,6 +50,18 @@ public class AplicationPrincipal {
         objetoCalculadora.inclui(objetoDaClasseFilme);
         objetoCalculadora.inclui(objetoSerieLost);
         System.out.println(objetoCalculadora.getTempoTotal());
+
+
+      FiltroRecomendacao filtro = new FiltroRecomendacao();
+      filtro.filtra(objetoDaClasseFilme);
+
+
+      Episodio episodio = new Episodio();
+      episodio.setNumero(1);
+      episodio.setSerie(objetoSerieLost);
+      episodio.setTotalVisualizacoes(300);
+
+      filtro.filtra(episodio);
 
     }
 }

@@ -1,8 +1,9 @@
 package br.com.alura.screenmath.modelosLocacaoMove.Modelos;
 
 
+import br.com.alura.screenmath.modelosLocacaoMove.calculos.Classificavel;
 
-public class Filme extends Titulo{
+public class Filme extends Titulo implements Classificavel {
   private String diretor;
 
     public String getDiretor() {
@@ -11,5 +12,10 @@ public class Filme extends Titulo{
 
     public void setDiretor(String diretor) {
         this.diretor = diretor;
+    }
+
+    @Override
+    public int getclassificacao() {
+        return (int)mediaNota() / 2;
     }
 }
