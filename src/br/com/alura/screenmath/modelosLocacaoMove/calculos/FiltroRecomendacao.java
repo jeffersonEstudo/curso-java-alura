@@ -4,11 +4,11 @@ public class FiltroRecomendacao {
 
 
     public void filtra(Classificavel classificavel){
-        if (classificavel.getclassificacao() >= 4){
+        if (classificavel.getClassificacao() >= 4){
 
             System.out.println("Está entre os preferidos do momento.");
 
-        }else if(classificavel.getclassificacao() >= 2){
+        }else if(classificavel.getClassificacao() >= 2){
 
             System.out.println("Muito bem avaliado no momento.");
         }else {

@@ -13,7 +13,7 @@ public class ConversorMoeda implements ConversorFinanceira{
     }
 
     @Override
-    public double converterDolarParaReal() {
+    public double getconverterDolarParaReal() {
         valor = valor * 5.78;
         System.out.println(valor);
         return valor;

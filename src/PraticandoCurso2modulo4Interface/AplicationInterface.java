@@ -8,10 +8,11 @@ public class AplicationInterface {
 
         ConversorMoeda objConvMoeda = new ConversorMoeda();
         objConvMoeda.setValor(10);
-        objConvMoeda.converterDolarParaReal();
+
 
         ValorConvertido objValorConvertido = new ValorConvertido();
         objValorConvertido.mostrar(objConvMoeda);
+
 
     }
 }
