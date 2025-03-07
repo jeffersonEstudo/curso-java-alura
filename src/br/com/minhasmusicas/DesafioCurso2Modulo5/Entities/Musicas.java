@@ -1,10 +1,9 @@
 package br.com.minhasmusicas.DesafioCurso2Modulo5.Entities;
 
-public class Musicas {
+public class Musicas extends Audio{
     private String album ;
     private String artista;
     private String genero;
-
 
     public String getAlbum() {
         return album;
