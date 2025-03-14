@@ -6,6 +6,8 @@ import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Serie;
 import br.com.alura.screenmath.modelosLocacaoMove.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmath.modelosLocacaoMove.calculos.FiltroRecomendacao;
 
+import java.util.ArrayList;
+
 public class AplicationPrincipal {
     public static void main(String[] args){
       Filme objetoDaClasseFilme = new Filme();
@@ -43,6 +45,8 @@ public class AplicationPrincipal {
         objetoSerieLost.exibeFichaTecnica();
         System.out.println("Duração total da Série: " + objetoSerieLost.getDuracaoEmMinutos() + " min" );
 
+        Filme outroObjtFilme = new Filme();
+
 
         CalculadoraDeTempo objetoCalculadora = new CalculadoraDeTempo();
 
@@ -62,6 +66,21 @@ public class AplicationPrincipal {
       episodio.setTotalVisualizacoes(300);
 
       filtro.filtra(episodio);
+
+
+      var filmeDoPaulo = new Filme();
+      filmeDoPaulo.setDuracaoEmMinutos(200);
+      filmeDoPaulo.setName("DogVille");
+      filmeDoPaulo.setAnoDeLacamento(2003);
+      filmeDoPaulo.avaliacao(10);
+
+      ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+
+      listaDeFilmes.add(filmeDoPaulo);
+      listaDeFilmes.add(objetoDaClasseFilme);
+      listaDeFilmes.add(outroObjtFilme);
+      System.out.println("Tamanho da lista: " + listaDeFilmes.size());
+      System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getName());
 
     }
 }
