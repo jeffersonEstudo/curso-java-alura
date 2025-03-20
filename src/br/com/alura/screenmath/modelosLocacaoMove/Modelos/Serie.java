@@ -6,6 +6,10 @@ private int episodiosPorTemporada;
 private int minutosPorEpisodio;
 private boolean ativa;
 
+    public Serie(String name, int anoDeLacamento) {
+        super(name, anoDeLacamento);
+    }
+
 
     public int getTemporadas() {
         return temporadas;

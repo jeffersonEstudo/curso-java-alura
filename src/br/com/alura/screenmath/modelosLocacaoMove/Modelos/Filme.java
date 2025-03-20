@@ -6,6 +6,12 @@ import br.com.alura.screenmath.modelosLocacaoMove.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
   private String diretor;
 
+    public Filme(String nome, int anoDeLacamaento) {
+        super(nome,anoDeLacamaento );
+    }
+
+
+
     public String getDiretor() {
         return diretor;
     }

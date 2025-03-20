@@ -9,6 +9,12 @@ public class Titulo {
     private double somaNota;
     private boolean incluidoNoPlano;
 
+
+    public Titulo(String name, int anoDeLacamento) {
+        this.name = name;
+        this.anoDeLacamento = anoDeLacamento;
+    }
+
     public String getName() {
         return name;
     }

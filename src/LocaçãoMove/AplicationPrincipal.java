@@ -10,9 +10,8 @@ import java.util.ArrayList;
 
 public class AplicationPrincipal {
     public static void main(String[] args){
-      Filme objetoDaClasseFilme = new Filme();
-      objetoDaClasseFilme.setName("O poderoso chefão"); ;
-      objetoDaClasseFilme.setAnoDeLacamento(1979);
+      Filme objetoDaClasseFilme = new Filme("O poderoso chefão",1979);
+
       objetoDaClasseFilme.setDuracaoEmMinutos(180);
 
 
@@ -35,19 +34,17 @@ public class AplicationPrincipal {
 
         System.out.println();
 
-        Serie objetoSerieLost = new Serie();
+        Serie objetoSerieLost = new Serie("Lost",2003 );
 
-        objetoSerieLost.setName("Lost");
-        objetoSerieLost.setAnoDeLacamento(2003);
         objetoSerieLost.setTemporadas(10);
         objetoSerieLost.setEpisodiosPorTemporada(10);
         objetoSerieLost.setMinutosPorEpisodio(50);
         objetoSerieLost.exibeFichaTecnica();
         System.out.println("Duração total da Série: " + objetoSerieLost.getDuracaoEmMinutos() + " min" );
 
-        Filme outroObjtFilme = new Filme();
+        Filme outroObjtFilme = new Filme("Outro filme",2025 );
 
-
+        outroObjtFilme.setDuracaoEmMinutos(150);
         CalculadoraDeTempo objetoCalculadora = new CalculadoraDeTempo();
 
 
@@ -68,10 +65,8 @@ public class AplicationPrincipal {
       filtro.filtra(episodio);
 
 
-      var filmeDoPaulo = new Filme();
+      var filmeDoPaulo = new Filme("DogVille", 2003);
       filmeDoPaulo.setDuracaoEmMinutos(200);
-      filmeDoPaulo.setName("DogVille");
-      filmeDoPaulo.setAnoDeLacamento(2003);
       filmeDoPaulo.avaliacao(10);
 
       ArrayList<Filme> listaDeFilmes = new ArrayList<>();
