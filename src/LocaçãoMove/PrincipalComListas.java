@@ -21,7 +21,9 @@ public class PrincipalComListas {
         lista.add(objetoSerieLost);
 
         for (Titulo item: lista){
-            System.out.println(item);
+            System.out.println(item.getName());
+            Filme filme = (Filme) item;
+            System.out.println("Classificação: " + filme.getClassificacao());
         }
     }
 }
