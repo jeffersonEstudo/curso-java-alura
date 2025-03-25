@@ -19,8 +19,11 @@ public class AplicationAnimal {
         System.out.println(lista.toString());
 
 
-            for (Cachorro item : lista) {
 
-            }
+                if (objCachorro instanceof Animal ) {
+                    Animal animal = (Animal) objCachorro; // Fazendo o cast manualmente
+                    System.out.println("Verificação concluída.");
+                }
+
     }
 }
