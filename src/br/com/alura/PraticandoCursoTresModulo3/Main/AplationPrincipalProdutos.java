@@ -19,8 +19,9 @@ public class AplationPrincipalProdutos {
 
         double total = 0;
         for (Produto produto: lista){
+            System.out.println("Mostrando cada valor: " + produto.getPreco());
            total += produto.getPreco();
-            System.out.println(total);
+            System.out.println("Total: " + total);
         }
         double media = (objProduto1.getPreco() + objProduto2.getPreco() + objProduto3.getPreco()) / lista.size();
         for (var i=-1 ; i <= lista.size();i++){
