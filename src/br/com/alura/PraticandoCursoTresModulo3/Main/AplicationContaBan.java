@@ -4,6 +4,8 @@ import br.com.alura.PraticandoCursoTresModulo3.Entities.ContaBancaria;
 
 import java.util.ArrayList;
 
+
+
 public class AplicationContaBan {
     public static void main(String[] args) {
 
@@ -16,12 +18,16 @@ public class AplicationContaBan {
         refeLista.add(refeObjContaBanc2);
         refeLista.add(refeObjContaBanc3);
 
+
+
+        ContaBancaria contaMaiorValor = (ContaBancaria) refeLista.get(1);
+
         for (ContaBancaria contaBancLista: refeLista){
 
-            if (contaBancLista.getSaldo() =>   ){
-
-                System.out.println("Conta com maior saldo é: " + );
-            }
+             if (contaBancLista.getSaldo() > contaMaiorValor.getSaldo()) {
+                 contaMaiorValor = contaBancLista;
+                 System.out.println("Conta com maior saldo é: " + contaMaiorValor);
+             }
         }
 
     }
