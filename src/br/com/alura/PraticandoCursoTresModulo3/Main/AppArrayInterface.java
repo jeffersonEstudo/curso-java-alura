@@ -23,12 +23,12 @@ public class AppArrayInterface {
 
             if (forma instanceof Circulo){
                 Circulo circulo = (Circulo) forma;
-                System.out.println("Area do circulo: " + circulo );
+                System.out.println("Área do circulo: " + circulo.calcularArea() );
             }
 
             else if (forma instanceof Quadrado){
                 Quadrado quadrado = (Quadrado) forma;
-                System.out.println("Area do quadrado: " + quadrado);
+                System.out.println("Área do quadrado: " + quadrado.calcularArea());
 
             }
         }

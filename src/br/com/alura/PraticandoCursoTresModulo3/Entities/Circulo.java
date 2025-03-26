@@ -33,6 +33,6 @@ public class Circulo implements Forma {
 
     @Override
     public String toString() {
-        return "" + (base * altura);
+        return "" + base;
     }
 }
