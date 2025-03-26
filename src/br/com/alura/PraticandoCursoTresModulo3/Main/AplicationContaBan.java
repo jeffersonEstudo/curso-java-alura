@@ -26,7 +26,7 @@ public class AplicationContaBan {
 
              if (contaBancLista.getSaldo() > contaMaiorValor.getSaldo()) {
                  contaMaiorValor = contaBancLista;
-                 System.out.println("Conta com maior saldo é: " + contaMaiorValor);
+                 System.out.println("Conta com maior saldo é: " + contaMaiorValor.getNumeroDaConta());
              }
         }
 
