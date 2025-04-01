@@ -5,9 +5,15 @@ import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Serie;
 import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Scanner;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
+
+
+
         Filme objetoDaClasseFilme = new Filme("O poderoso chefão",1979);
         objetoDaClasseFilme.avaliacao(9);
         var filmeDoPaulo = new Filme("DogVille", 2003);
@@ -30,5 +36,22 @@ public class PrincipalComListas {
             System.out.println("Classificação: " + filme.getClassificacao());
               }
         }
+
+
+        ArrayList<String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Paulo");
+        buscaPorArtista.add("Jaqueline");
+
+
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da ordenação.");
+        System.out.println(buscaPorArtista);
+
+        Collections.sort(lista);
+        System.out.println("Com ordenação de título:");
+        System.out.println(lista);
     }
 }

@@ -57,4 +57,9 @@ private boolean ativa;
         System.out.println("Minutos por episódio: " + getMinutosPorEpisodio());
 
     }
+
+    @Override
+    public String toString() {
+        return "Série: " + this.getName() + " Ano de lançamento: " + this.getAnoDeLacamento();
+    }
 }

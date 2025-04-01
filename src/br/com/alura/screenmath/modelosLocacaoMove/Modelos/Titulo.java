@@ -1,6 +1,6 @@
 package br.com.alura.screenmath.modelosLocacaoMove.Modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
 
     private String name;
     private int anoDeLacamento;
@@ -63,5 +63,10 @@ public class Titulo {
     public double mediaNota(){
         return somaNota / totalNota;
 
+    }
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getName().compareTo(outroTitulo.getName());
     }
 }
