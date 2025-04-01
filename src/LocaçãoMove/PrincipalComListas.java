@@ -4,10 +4,7 @@ import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Filme;
 import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Serie;
 import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
@@ -23,7 +20,7 @@ public class PrincipalComListas {
         Serie objetoSerieLost = new Serie("Lost",2003 );
         objetoSerieLost.avaliacao(4);
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+       List<Titulo> lista = new LinkedList<>();
 
         lista.add(filmeDoPaulo);
         lista.add(objetoDaClasseFilme);
@@ -50,8 +47,12 @@ public class PrincipalComListas {
         System.out.println("Depois da ordenação.");
         System.out.println(buscaPorArtista);
 
-        Collections.sort(lista);
+
         System.out.println("Com ordenação de título:");
+        Collections.sort(lista);
+        System.out.println(lista);
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLacamento));
+        System.out.println("Ordenando por ano:");
         System.out.println(lista);
     }
 }
