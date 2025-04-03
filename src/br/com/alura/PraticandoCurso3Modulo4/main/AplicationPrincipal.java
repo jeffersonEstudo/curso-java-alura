@@ -2,6 +2,8 @@ package br.com.alura.PraticandoCurso3Modulo4.main;
 
 import br.com.alura.PraticandoCurso3Modulo4.Entities.NumeroInteiros;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,9 +16,11 @@ public class AplicationPrincipal {
 
         List<NumeroInteiros> lista = new LinkedList<>();
         lista.add(refeDoObjNumero);
+        lista.add(refeDoObjNumero2);
 
 
         System.out.println(lista.get(0));
-
+        Collections.sort(lista);
+        System.out.println();
     }
 }

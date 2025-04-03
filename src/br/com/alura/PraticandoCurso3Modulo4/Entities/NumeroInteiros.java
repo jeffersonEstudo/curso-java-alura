@@ -1,6 +1,9 @@
 package br.com.alura.PraticandoCurso3Modulo4.Entities;
 
-public class NumeroInteiros {
+import java.util.Collection;
+import java.util.Collections;
+
+public class NumeroInteiros implements Collection<NumeroInteiros> {
   private int number1 ;
 
 
