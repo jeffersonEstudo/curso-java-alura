@@ -3,7 +3,7 @@ package br.com.alura.PraticandoCurso3Modulo4.Entities;
 import java.util.Collection;
 import java.util.Collections;
 
-public class NumeroInteiros implements Collection<NumeroInteiros> {
+public class NumeroInteiros implements Comparable<NumeroInteiros> {
   private int number1 ;
 
 
@@ -22,5 +22,10 @@ public class NumeroInteiros implements Collection<NumeroInteiros> {
     @Override
     public String toString() {
         return "Numero: " + this.getNumber1();
+    }
+
+    @Override
+    public int compareTo(NumeroInteiros outroNumeros) {
+        return this.getNumber1();
     }
 }
