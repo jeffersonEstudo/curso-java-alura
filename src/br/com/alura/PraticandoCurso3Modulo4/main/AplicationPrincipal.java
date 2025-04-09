@@ -1,7 +1,7 @@
 package br.com.alura.PraticandoCurso3Modulo4.main;
 
 import br.com.alura.PraticandoCurso3Modulo4.Entities.NumeroInteiros;
-import br.com.alura.screenmath.modelosLocacaoMove.Modelos.Titulo;
+import br.com.alura.PraticandoCurso3Modulo4.Entities.Titulo;
 
 import java.util.*;
 
@@ -22,5 +22,20 @@ public class AplicationPrincipal {
         System.out.println("Ordenando:");
         lista.sort(Comparator.comparing(NumeroInteiros::getNumber1));
         System.out.println(lista);
+
+
+        Titulo refeObjTitulo = new Titulo("Bora bora");
+        Titulo refeObjTitulo2 = new Titulo("Aora aora");
+
+        List<Titulo> listTitulo = new ArrayList<>();
+        listTitulo.add(refeObjTitulo);
+        listTitulo.add(refeObjTitulo2);
+
+        System.out.println(listTitulo);
+        System.out.println("Agora em Ordem alfabetica:");
+        Collections.sort(listTitulo);
+        System.out.println(listTitulo);
+
+
     }
 }
