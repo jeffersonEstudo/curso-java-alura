@@ -36,6 +36,16 @@ public class AplicationPrincipal {
         Collections.sort(listTitulo);
         System.out.println(listTitulo);
 
+        List<String> listTitulo2;
+        listTitulo2 = new ArrayList<>();
+        listTitulo2.add("Testando Obj");
+        listTitulo2.add("Ab");
+
+        System.out.println(listTitulo2);
+        System.out.println("Agora em Ordem alfabetica:");
+        Collections.sort(listTitulo2);
+        System.out.println(listTitulo2);
+
 
     }
 }
