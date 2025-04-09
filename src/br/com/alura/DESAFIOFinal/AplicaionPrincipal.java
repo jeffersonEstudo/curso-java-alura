@@ -10,12 +10,14 @@ public class AplicaionPrincipal {
         Scanner entrada = new Scanner(System.in);
         List<Saldo> listSaldo = new ArrayList<>();
         System.out.println("Digite seu saldo: ");
+
         var recebe = entrada.nextDouble();
 
         Saldo refObjSaldo =new Saldo(recebe);
         listSaldo.add(refObjSaldo);
         for (Saldo teste: listSaldo) {
             System.out.println(teste.toString());
+
         }
     }
 }
