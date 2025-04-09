@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class AplicaionPrincipal {
     public static void main(String[] args) {
-
+        //Falta fazer os campos de descrição, o valor, o calculo
         Scanner entrada = new Scanner(System.in);
         List<Saldo> listSaldo = new ArrayList<>();
         System.out.println("Digite seu saldo: ");
