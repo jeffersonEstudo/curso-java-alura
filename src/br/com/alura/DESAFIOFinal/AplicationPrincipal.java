@@ -30,7 +30,7 @@ public class AplicationPrincipal {
                 System.out.println(teste.toString());
 
             }
-
+            listSaldo.add(refObjSaldo); 
             repOpt = 0;
             System.out.println("Digite 0 para sair e 1 para continuar:");
             repOpt = optRep.nextInt() ;
