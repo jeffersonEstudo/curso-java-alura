@@ -5,8 +5,11 @@ public class Saldo {
     private String produto;
     private double valorCompra;
 
-    public Saldo(double saldo) {
+
+    public Saldo(double saldo, String produto, double valorCompra) {
         this.saldo = saldo;
+        this.produto = produto;
+        this.valorCompra = valorCompra;
     }
 
     public double getSaldo() {
@@ -36,7 +39,9 @@ public class Saldo {
     @Override
     public String toString() {
         return "*****************" + "\n" +
-                "Saldo: " + getSaldo() +
+                "Produto: " + getProduto() +"\n"+
+                "Valor: " + getValorCompra() +"\n"+
+                 "Saldo atual: " + (getSaldo() - getValorCompra()) +
                "\n" + "*****************";
     }
 }
