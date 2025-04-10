@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 public class AplicationPrincipal {
     public static void main(String[] args) {
-        //Falta fazer os campos de descrição, o valor, o calculo
+
+
+
         Scanner entrada = new Scanner(System.in);
         List<Saldo> listSaldo = new ArrayList<>();
 
@@ -25,7 +27,10 @@ public class AplicationPrincipal {
 
             for (Saldo teste: listSaldo) {
             System.out.println(teste.toString());
-
         }
+
+
+
+
     }
 }
