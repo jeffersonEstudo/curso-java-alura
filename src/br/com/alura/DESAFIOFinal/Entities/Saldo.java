@@ -1,4 +1,4 @@
-package br.com.alura.DESAFIOFinal;
+package br.com.alura.DESAFIOFinal.Entities;
 
 public class Saldo {
     private double saldo;
