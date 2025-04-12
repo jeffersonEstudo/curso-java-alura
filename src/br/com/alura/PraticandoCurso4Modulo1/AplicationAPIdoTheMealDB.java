@@ -1,5 +1,8 @@
 package br.com.alura.PraticandoCurso4Modulo1;
 
+import br.com.alura.PraticandoCurso3Modulo4.Entities.Titulo;
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -23,5 +26,6 @@ public class AplicationAPIdoTheMealDB {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.body());
+
     }
 }
