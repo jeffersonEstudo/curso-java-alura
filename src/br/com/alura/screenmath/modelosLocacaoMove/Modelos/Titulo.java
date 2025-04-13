@@ -1,13 +1,17 @@
 package br.com.alura.screenmath.modelosLocacaoMove.Modelos;
 
-public class Titulo implements Comparable<Titulo>{
+import com.google.gson.annotations.SerializedName;
 
+public class Titulo implements Comparable<Titulo>{
+    @SerializedName("Title")
     private String name;
+    @SerializedName("Year")
     private int anoDeLacamento;
+    private boolean incluidoNoPlano;
     private int totalNota;
     private double duracaoEmMinutos;
     private double somaNota;
-    private boolean incluidoNoPlano;
+
 
 
     public Titulo(String name, int anoDeLacamento) {
@@ -69,5 +73,11 @@ public class Titulo implements Comparable<Titulo>{
     public int compareTo(Titulo outroTitulo) {
 
         return this.getName().compareTo(outroTitulo.getName());
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", anoDeLacamento=" + anoDeLacamento ;
     }
 }
