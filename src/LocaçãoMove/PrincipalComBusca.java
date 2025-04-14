@@ -18,7 +18,7 @@ public class PrincipalComBusca {
         Scanner entradaLeitura = new Scanner(System.in);
         System.out.println("Digite um filme:");
         String busca = entradaLeitura.nextLine();
-
+        try{
         String endereco = "http://www.omdbapi.com/?t=" + busca + "&apikey=f301d24";
 
         HttpClient client = HttpClient.newHttpClient();
@@ -38,14 +38,19 @@ public class PrincipalComBusca {
 
         TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(meuTituloOmdb);
-        try{
+        //try{
             Titulo meuTitulo = new Titulo(meuTituloOmdb);
             System.out.println("Titulo convertido:");
             System.out.println(meuTitulo);
         }catch(NumberFormatException e){
             System.out.println("Aconteceu um erro:");
             System.out.println(e.getMessage());
-        }finally {
+        }catch (IllegalArgumentException e){
+            System.out.println("Algum erro de argumento na busca.");
+
+        }
+
+        finally {
             System.out.println("O programa finalizou.");
         }
 
