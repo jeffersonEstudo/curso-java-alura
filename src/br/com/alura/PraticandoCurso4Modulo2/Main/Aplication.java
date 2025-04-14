@@ -1,8 +1,7 @@
-package br.com.alura.PraticandoCurso4Modulo2;
+package br.com.alura.PraticandoCurso4Modulo2.Main;
 
+import br.com.alura.PraticandoCurso4Modulo2.Entities.Pessoa;
 import com.google.gson.Gson;
-
-import java.util.Scanner;
 
 public class Aplication {
     public static void main(String[] args) {
@@ -11,7 +10,8 @@ public class Aplication {
                    {
                    "nome": "jefferson",
                    "idade": "27",
-                   "cidade": "Salvador"
+                   "cidade": "Salvador",
+                   "altura": 1.77
                    }
                 """;
 
