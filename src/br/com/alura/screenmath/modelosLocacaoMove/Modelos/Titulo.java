@@ -1,5 +1,7 @@
 package br.com.alura.screenmath.modelosLocacaoMove.Modelos;
 
+
+import br.com.alura.screenmath.modelosLocacaoMove.Exception2.ErroDeConversaoDeAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
@@ -24,6 +26,10 @@ public class Titulo implements Comparable<Titulo>{
 
         this.name = meuTituloOmdb.title();
 
+        if(meuTituloOmdb.year().length() > 4){
+           throw new ErroDeConversaoDeAnoException("Erro na conversão de ano. " +
+          "O ano possui mais de 4 (quatro) caracteres.");
+     }
         this.anoDeLacamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }
