@@ -5,13 +5,10 @@ import br.com.alura.screenmath.modelosLocacaoMove.Exception2.ErroDeConversaoDeAn
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
-    @SerializedName("Title")
     private String name;
-    @SerializedName("Year")
     private int anoDeLacamento;
     private boolean incluidoNoPlano;
     private int totalNota;
-    @SerializedName("Runtime")
     private double duracaoEmMinutos;
     private double somaNota;
 
@@ -31,7 +28,7 @@ public class Titulo implements Comparable<Titulo>{
           "O ano possui mais de 4 (quatro) caracteres.");
      }
         this.anoDeLacamento = Integer.valueOf(meuTituloOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
+        this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,2));
     }
 
     public String getName() {
@@ -92,8 +89,8 @@ public class Titulo implements Comparable<Titulo>{
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", anoDeLacamento=" + anoDeLacamento +
+        return "Name='" + name + '\'' +
+                ", AnoDeLacamento=" + anoDeLacamento +
                 ", Duração: " + duracaoEmMinutos;
     }
 }
