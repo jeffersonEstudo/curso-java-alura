@@ -17,9 +17,15 @@ public class PesquisaGitHub {
         System.out.println("Qual o nome do perfil?");
         String digitacao = entrada.nextLine();
 
+        String endereco = "https://api.github.com/users/" + digitacao;
+
+
+        try {
+
+        }catch (ErroConsultaGitHubException e){}
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://api.github.com/users/" + digitacao)) /*jeffersonEstudo*/
+                .uri(URI.create(endereco)) /*jeffersonEstudo*/
                 .build();
 
 
