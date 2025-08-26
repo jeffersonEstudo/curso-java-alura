@@ -22,7 +22,7 @@ public class PesquisaGitHub {
 
         try {
 
-        }catch (ErroConsultaGitHubException e){}
+
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco)) /*jeffersonEstudo*/
@@ -33,21 +33,27 @@ public class PesquisaGitHub {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
 
-        String json = response.body();
-
-
-        Gson gson = new Gson();
-
-
-
-
-            PegandoTresInfoGit tresInfo = gson.fromJson(json, PegandoTresInfoGit.class);
 
 
             if (response.statusCode()== 404 ){
                 throw new ErroConsultaGitHubException("Usuário não encontrado.");
               }
 
+            String json = response.body();
+
+
+            Gson gson = new Gson();
+
+
+
+
+            PegandoTresInfoGit tresInfo = gson.fromJson(json, PegandoTresInfoGit.class);
+        }catch ( IOException | InterruptedException e){
+            System.out.println("Houve um erro durante a consulta à API do GITHUB.");
+            e.printStackTrace();
+        }catch (ErroConsultaGitHubException e){
+            System.out.println(e.getMessage());
+        }
 
 
     }
