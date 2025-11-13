@@ -32,22 +32,26 @@ public class PesquisaGitHub {
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
-
-
+            String json = response.body();
+            System.out.println(response.body());
 
             if (response.statusCode()== 404 ){
                 throw new ErroConsultaGitHubException("Usuário não encontrado.");
               }
 
-            String json = response.body();
 
 
             Gson gson = new Gson();
 
 
 
-
             PegandoTresInfoGit tresInfo = gson.fromJson(json, PegandoTresInfoGit.class);
+            System.out.println(tresInfo);
+
+            infoGit ObjtInfoGit = new infoGit(tresInfo) ;
+            System.out.println(ObjtInfoGit);
+
+
         }catch ( IOException | InterruptedException e){
             System.out.println("Houve um erro durante a consulta à API do GITHUB.");
             e.printStackTrace();
