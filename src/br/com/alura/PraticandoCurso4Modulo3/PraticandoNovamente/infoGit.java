@@ -22,20 +22,20 @@ public class infoGit {
         return login;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getNode_id() {
-        return node_id;
-    }
-
     public void setLogin(String login) {
         this.login = login;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNode_id() {
+        return node_id;
     }
 
     public void setNode_id(String node_id) {
@@ -44,7 +44,9 @@ public class infoGit {
 
     @Override
     public String toString() {
-        return "Nome1 conta: " + login;
+        return "Nome conta: " + login + "."+
+                " ID da conta: " + id + "."+
+                " Id do Node: " + node_id + ".";
     }
 
 
