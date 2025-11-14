@@ -15,6 +15,6 @@ public class PuxandoInterfaceGit extends infoGit implements InsterfaceGit {
     @Override
     public String toString(){
 
-        return "Nome2 conta " + this.getLogin() + this.getId() + this.getNode_id();
+        return "Nome2 conta " + this.getLogin() + this.getId() + this.getCreated_at();
     }
 }

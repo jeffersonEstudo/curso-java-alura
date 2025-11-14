@@ -1,4 +1,4 @@
 package br.com.alura.PraticandoCurso4Modulo3.PraticandoNovamente;
 
-public record PegandoTresInfoGit(String login, int id, String node_id) {
+public record PegandoTresInfoGit(String login, int id, String created_at) {
 }

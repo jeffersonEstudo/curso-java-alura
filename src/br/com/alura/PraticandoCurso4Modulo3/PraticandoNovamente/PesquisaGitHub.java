@@ -33,7 +33,7 @@ public class PesquisaGitHub {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
             String json = response.body();
-            System.out.println(response.body());
+
 
             if (response.statusCode()== 404 ){
                 throw new ErroConsultaGitHubException("Usuário não encontrado.");
@@ -46,9 +46,11 @@ public class PesquisaGitHub {
 
 
             PegandoTresInfoGit tresInfo = gson.fromJson(json, PegandoTresInfoGit.class);
-            System.out.println(tresInfo);
+
 
             infoGit ObjtInfoGit = new infoGit(tresInfo) ;
+            System.out.println(response.body());
+            System.out.println(tresInfo);
             System.out.println(ObjtInfoGit);
 
 
@@ -57,6 +59,12 @@ public class PesquisaGitHub {
             e.printStackTrace();
         }catch (ErroConsultaGitHubException e){
             System.out.println(e.getMessage());
+        }catch(ErroIlegalArgumento e){
+            //Caso não caia aqui, muitos matches(identificador de caracter especial)
+            //não funcionam.
+            System.out.println(e.getMessage());
+        } catch(IllegalArgumentException e){
+            System.out.println("Caracter invalido. " + e.getMessage());
         }
 
 
